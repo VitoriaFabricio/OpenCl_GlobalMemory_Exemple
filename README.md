@@ -2,7 +2,7 @@
 
 This program demonstrates the use of OpenCL to apply a 3x3 filter to an image. The main components include:
 
-Host Code:
+Host Code (main.cl):
 
 - Reads an image from a CSV file (original_0.csv).
 - Initializes OpenCL environment: platform, device, context, command queue.
