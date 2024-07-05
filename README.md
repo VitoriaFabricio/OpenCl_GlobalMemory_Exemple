@@ -1,8 +1,10 @@
 # OpenCl_GlobalMemory_Exemple
 
-This program demonstrates the use of OpenCL to apply a 3x3 filter to an image. The main components include:
+This program demonstrates the use of OpenCL to apply a 3x3 filter to an image. 
 
-Host Code:
+The main components include:
+
+Host Code (main.c):
 
 - Reads an image from a CSV file (original_0.csv).
 - Initializes OpenCL environment: platform, device, context, command queue.
@@ -12,7 +14,7 @@ Host Code:
 - Measures and prints the execution time.
 - Reads the processed image from the device and writes the result to a CSV file (result.csv).
 
-Kernel Code:
+Kernel Code(filter.cl):
 
 - Applies a 3x3 filter to the input image, handling edge cases for pixels at the borders and corners of the image.
 - The filter weights and dimensions are defined within the kernel.
